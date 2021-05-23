@@ -1,8 +1,10 @@
+using BookStore.API.Data;
 using BookStore.API.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -34,6 +36,15 @@ namespace BookStore.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.API", Version = "v1" });
             });
 
+            //To tell about all Database(Entity frameWork) we have to add that service in this 
+            //Option is to add connection string we can add here or in the BookStoreContext class by override the OnConfiguring() method there 
+            //services.AddDbContext<BookStoreContext>(); // if we added connection string in context class
+            //Get the connection string from appsettings.json i.e.BookStoreDB
+            services.AddDbContext<BookStoreContext>(
+                options => options.UseSqlServer(Configuration.GetConnectionString("BookStoreDB")));
+            //options => options.UseSqlServer("Server=FMIC00100\SQL2014FULL;Database=BooksStoreAPI;Integrated Security=True"));
+
+            //the following line will add Dependency Injection of Transient type for the project 
             services.AddTransient<IBookRepository, BookRepository>();
         }
 

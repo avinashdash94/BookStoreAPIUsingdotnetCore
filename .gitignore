@@ -4,3 +4,4 @@
 
 /.vs
 /BookStore.API/.vs/BookStore.API
+/BookStore.API/BookStore.API/bin/Debug/net5.0
