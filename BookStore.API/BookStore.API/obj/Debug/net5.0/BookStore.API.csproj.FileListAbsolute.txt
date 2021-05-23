@@ -1,0 +1,7 @@
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.csprojAssemblyReference.cache
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.AssemblyInfoInputs.cache
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.AssemblyInfo.cs
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.csproj.CoreCompileInputs.cache
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.MvcApplicationPartsAssemblyInfo.cache
