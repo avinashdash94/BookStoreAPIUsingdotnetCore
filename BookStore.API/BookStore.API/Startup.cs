@@ -30,22 +30,27 @@ namespace BookStore.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            //**It is used for If we are not using Patch Methods for controllers action method
+            //services.AddControllers();
+            //**To use Patch Method We have to use 
+            services.AddControllers().AddNewtonsoftJson();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookStore.API", Version = "v1" });
             });
 
-            //To tell about all Database(Entity frameWork) we have to add that service in this 
-            //Option is to add connection string we can add here or in the BookStoreContext class by override the OnConfiguring() method there 
+            //**To tell about all Database(Entity frameWork) we have to add that service in this 
+            //**Option is to add connection string we can add here or in the BookStoreContext class by override the OnConfiguring() method there 
             //services.AddDbContext<BookStoreContext>(); // if we added connection string in context class
-            //Get the connection string from appsettings.json i.e.BookStoreDB
+            //**Get the connection string from appsettings.json i.e.BookStoreDB
+            
             services.AddDbContext<BookStoreContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("BookStoreDB")));
             //options => options.UseSqlServer("Server=FMIC00100\SQL2014FULL;Database=BooksStoreAPI;Integrated Security=True"));
 
-            //the following line will add Dependency Injection of Transient type for the project 
+            //**the following line will add Dependency Injection of Transient type for the project 
             services.AddTransient<IBookRepository, BookRepository>();
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

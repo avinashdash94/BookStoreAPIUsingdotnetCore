@@ -59,3 +59,6 @@ C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsi
 C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\ref\BookStore.API.dll
 C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.pdb
 C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\obj\Debug\net5.0\BookStore.API.genruntimeconfig.cache
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\adash.CHAINGANG\Desktop\MyPractice\AspDotNetCore\WebApi\BookStoreApiUsingdotnetCore\BookStore.API\BookStore.API\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
