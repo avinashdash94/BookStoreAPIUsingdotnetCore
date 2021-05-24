@@ -1,4 +1,5 @@
-﻿using BookStore.API.Data;
+﻿using AutoMapper;
+using BookStore.API.Data;
 using BookStore.API.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.EntityFrameworkCore;
@@ -12,37 +13,50 @@ namespace BookStore.API.Repository
     public class BookRepository : IBookRepository
     {
         private readonly BookStoreContext _context;
+        private readonly IMapper _mapper;
 
-        public BookRepository(BookStoreContext context)
+        public BookRepository(BookStoreContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         public async Task<List<BookModel>> GetAllBooksAsync()
         {
-            //Getting all books Data and converting into BookModel type by selecting each Book Data
-            var records = await _context.Books.Select(x => new BookModel()
-            {
-                Id = x.Id,
-                Title = x.Title,
-                Description = x.Description
-            })
-            .ToListAsync();
+            //**Getting all books Data and converting into BookModel type by selecting each Book Data
+            //** Mauall Mapping of class
+            //var records = await _context.Books.Select(x => new BookModel()
+            //{
+            //    Id = x.Id,
+            //    Title = x.Title,
+            //    Description = x.Description
+            //})
+            //.ToListAsync();
 
-            return records;
+            //return records;
+
+            //** Mapping of class using AutoMapper
+            var records = await _context.Books.ToListAsync();
+            return _mapper.Map<List<BookModel>>(records);
         }
 
         public async Task<BookModel> GetBookByIdAsync(int bookId)
         {
             //Getting all books Data and converting into BookModel type by selecting each Book Data
-            var records = await _context.Books.Where(x => x.Id == bookId).Select(x => new BookModel()
-            {
-                Id = x.Id,
-                Title = x.Title,
-                Description = x.Description
-            })
-            .FirstOrDefaultAsync();
+            //** without Mapper we map data Manually
+            //var records = await _context.Books.Where(x => x.Id == bookId).Select(x => new BookModel()
+            //{
+            //    Id = x.Id,
+            //    Title = x.Title,
+            //    Description = x.Description
+            //})
+            //.FirstOrDefaultAsync();
 
-            return records;
+            //return records;
+
+            //** using Mapper we not need to map the data manually
+            var book = await _context.Books.FindAsync(bookId);
+            return _mapper.Map<BookModel>(book);
+
         }
 
         public async Task<int> AddBookAsync(BookModel bookModel)

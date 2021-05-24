@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pbgqd5MQUfU8mNyNwC2f/qJmDzsPaNrB5TRSDvZdiYvjgcKnoHZUs3jw+XCuQtkRhuFnVV+GbeOeKOyUeR/PFw==",
+  "dgSpecHash": "lgOqE9tizpU0zYhiD9g3QReTAn9Amods805VD6K10wVmPvCNIwmO7K9myHSvVnIg4UKjcahe87K9HymB6p5q+w==",
   "success": true,
   "projectFilePath": "C:\\Users\\adash.CHAINGANG\\Desktop\\MyPractice\\AspDotNetCore\\WebApi\\BookStoreApiUsingdotnetCore\\BookStore.API\\BookStore.API\\BookStore.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.3\\microsoft.aspnetcore.jsonpatch.5.0.3.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.3.nupkg.sha512",
@@ -72,7 +74,7 @@
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.private.uri\\4.3.2\\system.private.uri.4.3.2.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\adash.CHAINGANG\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

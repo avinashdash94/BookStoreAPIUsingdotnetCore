@@ -50,7 +50,9 @@ namespace BookStore.API
 
             //**the following line will add Dependency Injection of Transient type for the project 
             services.AddTransient<IBookRepository, BookRepository>();
-        
+
+            //Add Automapper For mapping one class type to another class type
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
